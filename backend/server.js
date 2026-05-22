@@ -16,7 +16,7 @@ app.use(express.json()); //parses incoming JSON requests and puts the parsed dat
 const User = require('./models/User');
 const Trip = require('./models/Trip');
 const Activity = require('./models/Activity');
-
+const ActivityChangeRequest = require('./models/ActivityChangeRequest');
 
 //mongodb connection
 mongoose.connect(process.env.MONGODB_URI)
